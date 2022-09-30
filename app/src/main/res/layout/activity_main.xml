@@ -4,103 +4,116 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:paddingHorizontal="50dp">
+
+
+    <RadioGroup
+        android:id="@+id/activities"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="21dp">
+
+    </RadioGroup>
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <RadioButton
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@android:dimen/notification_large_icon_width"
+            android:text="Other"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="92dp" />
 
-            <TextView
-                android:id="@+id/labelTimestamp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Timestamp" />
-
-            <TextView
-                android:id="@+id/valueTimestamp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <RadioButton
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@android:dimen/notification_large_icon_height"
+            android:text="Walking"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="140dp"
+            tools:ignore="MissingConstraints" />
 
-            <TextView
-                android:id="@+id/labelAccelX"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Accel X" />
-
-            <TextView
-                android:id="@+id/valueAccelX"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView" />
-
-            <Button
-                android:id="@+id/buttonStartStop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Start" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <RadioButton
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@android:dimen/notification_large_icon_height"
+            android:text="Running"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="192dp"
+            tools:ignore="MissingConstraints" />
 
-            <TextView
-                android:id="@+id/labelAccelY"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Accel Y" />
-
-            <TextView
-                android:id="@+id/valueAccelY"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView" />
-
-        </LinearLayout>
-        <LinearLayout
+        <RadioButton
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@android:dimen/notification_large_icon_height"
+            android:text="Standing"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="237dp"
+            tools:ignore="MissingConstraints" />
 
-            <TextView
-                android:id="@+id/labelAccelZ"
-                android:layout_width="196dp"
-                android:layout_height="49dp"
-                android:layout_weight="1"
-                android:text="Accel Z" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@android:dimen/notification_large_icon_height"
+            android:text="Sitting"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="284dp"
+            tools:ignore="MissingConstraints" />
 
-            <TextView
-                android:id="@+id/valueAccelZ"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@android:dimen/notification_large_icon_height"
+            android:text="Upstairs"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="332dp"
+            tools:ignore="MissingConstraints" />
 
-        </LinearLayout>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@android:dimen/notification_large_icon_height"
+            android:text="Downstairs"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="380dp"
+            tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStartStop"
+        android:text="Start"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="493dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPauseResume"
+        android:text="Pause"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="566dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDiscard"
+        android:text="Discard"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="638dp"
+        tools:ignore="MissingConstraints" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
