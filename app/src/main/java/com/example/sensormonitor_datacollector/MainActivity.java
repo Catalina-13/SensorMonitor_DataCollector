@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     private HandlerThread workerThread;
     private Handler handlerWorker;
     private RadioGroup activitiesRadioGroup;
-    private int interval = 1000; // read sensor delayed data each 1000 ms
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

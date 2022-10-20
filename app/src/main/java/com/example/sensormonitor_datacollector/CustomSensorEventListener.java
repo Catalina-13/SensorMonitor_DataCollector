@@ -99,7 +99,6 @@ public class CustomSensorEventListener implements SensorEventListener {
 
     private boolean isSensing = false;
     private LinkedList<Sample> samples = new LinkedList<>();
-    //private File fileName;
 
     public CustomSensorEventListener(MainActivity mainActivity) {
         this.mainActivity = mainActivity;
